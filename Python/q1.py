@@ -10,10 +10,9 @@ prime_list = []
 for i in range (10**(n-1) , 10**n):
     if i == 1:
         continue
-    is_prime = check_prime(i)
-    if is_prime :
+    if check_prime(i) :
         prime_list.append(i)
-print(prime_list)
+#print(prime_list)
 
 with open("myFirstFile.txt", "w") as file1:
     last_prime_number = prime_list[0]
